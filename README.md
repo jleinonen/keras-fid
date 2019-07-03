@@ -1,7 +1,9 @@
 ## Frechet Inception Distance for Keras GANs
 
-This module contains an implementation of the Frechet Inception Distance
+This module contains an implementation of the Frechet Inception Distance (FID)
 metric for Keras-based generative adversarial network (GAN) generators.
+
+The FID is defined here: https://arxiv.org/abs/1706.08500
 
 ### Usage
 
@@ -22,3 +24,8 @@ If you already have the means and covariances:
 ```python
 gan_fid = fid.frechet_distance(mean1, cov1, mean2, cov2)
 ```
+
+### More information
+
+See the docstrings for the `fid.FrechetInceptionDistance` class and
+the `fid.frechet_distance` function for more detailed documentation.
